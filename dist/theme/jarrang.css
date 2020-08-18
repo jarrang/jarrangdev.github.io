@@ -28,8 +28,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading-text-shadow: none;
   --heading-font-weight: 900;
   --heading1-text-shadow: none;
-  --heading1-size: 3em;
-  --heading2-size: 2.11em;
+  --heading1-size: 48px;
+  --heading2-size: 36px;
   --heading3-size: 1.55em;
   --heading4-size: 1em;
   --code-font: monospace;
@@ -83,10 +83,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3em; }
+  font-size: 48px; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 36px; }
 
 .reveal h3 {
   font-size: 1.55em; }

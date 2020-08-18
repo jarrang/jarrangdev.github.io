@@ -1,3 +1,4 @@
+<!-- This document was made using Reveal.js, read documentation at https://revealjs.com/ -->
 <!doctype html>
 <html>
 	<head>
@@ -14,6 +15,7 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 
 		<style>
+			{# TEXT STYLES #}
     		.reveal h1 {
 			text-transform: none;
 			}
@@ -22,6 +24,7 @@
 			color: white
 			}
 
+			{# JARRANG LOGO BOTTOM LEFT #}
 			.reveal .footer {
  			position: absolute;
     		top: 90%;
@@ -31,12 +34,13 @@
 			display: none;
 			}
 
+			{# FLEX COLUMNS #}
 			.container{
   			display: flex;
 			align-items: center
 			}
 
-			.contentscontainer{
+			.containertop{
   			display: flex;
 			align-items: top;
 			}
@@ -45,12 +49,13 @@
   			flex: 1;
 			}
 			
-
+			{# LIST STYLES #}
 			.reveal ul {
 				text-align: center;
 				list-style-type: none;
 			}
 
+			{# LINE DIVIDER STYLES #}
 			.reveal hr {
 				max-width: 150px;
 				margin: 20px auto;
@@ -58,6 +63,7 @@
 				border-color: #B08310;
 			}
 
+			{# PROFILE PHOTO ANIMATION 1 #}
 			.floating {  
    			 animation-name: floating;
    			 animation-duration: 3s;
@@ -73,6 +79,7 @@
   			to   { transform: translate(-410px, 70px); }    
 			}
 
+			{# PROFILE PHOTO ANIMATION 2 #}
 			.floating2 {  
    			 animation-name: floating2;
    			 animation-duration: 4s;
@@ -88,6 +95,7 @@
   			to   { transform: translate(0, 70px); }    
 			}
 
+			{# PROFILE PHOTO ANIMATION 3 #}
 			.floating3 {  
    			 animation-name: floating3;
    			 animation-duration: 4s;
@@ -103,6 +111,7 @@
   			to   { transform: translate(210px, -70px); }    
 			}
 
+			{# PROFILE PHOTO ANIMATION 4 #}
 			.floating4 {  
    			 animation-name: floating4;
    			 animation-duration: 4s;
@@ -118,6 +127,7 @@
   			to   { transform: translate(-210px, -70px); }    
 			}
 
+			{# PROFILE PHOTO ANIMATION 5 #}
 			.floating5 {  
    			 animation-name: floating5;
    			 animation-duration: 4s;
@@ -133,58 +143,61 @@
   			to   { transform: translate(410px, 70px); }    
 			}
 
+			{# LOGO ROTATION ANIMATION #}
 			@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotating {
-  -webkit-animation: rotating 20s linear infinite;
-  -moz-animation: rotating 20s linear infinite;
-  -ms-animation: rotating 20s linear infinite;
-  -o-animation: rotating 20s linear infinite;
-  animation: rotating 20s linear infinite;
-}
+  			from {
+				-webkit-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			to {
+				-webkit-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+			}
+			@keyframes rotating {
+			from {
+				-ms-transform: rotate(0deg);
+				-moz-transform: rotate(0deg);
+				-webkit-transform: rotate(0deg);
+				-o-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+			to {
+				-ms-transform: rotate(360deg);
+				-moz-transform: rotate(360deg);
+				-webkit-transform: rotate(360deg);
+				-o-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
+			}
+			.rotating {
+			-webkit-animation: rotating 20s linear infinite;
+			-moz-animation: rotating 20s linear infinite;
+			-ms-animation: rotating 20s linear infinite;
+			-o-animation: rotating 20s linear infinite;
+			animation: rotating 20s linear infinite;
+			}
 
-p span {
-	background-color: #F5EEDA;
-	border-color: #F5EEDA;
-	color: black;
-	border-style: solid;
-	border-radius: 10px;
-	border-width: 10px;
-}
+			{# WHITE TEXT BOX #}
+			p span {
+				background-color: #F5EEDA;
+				border-color: #F5EEDA;
+				color: black;
+				border-style: solid;
+				border-radius: 10px;
+				border-width: 10px;
+			}
 
-.reveal .contents {
-	padding: 10px;
-}
+			{# CONTENTS PAGE STYLES #}
+			.reveal .contents {
+				padding: 10px;
+			}
 
-.reveal .contentslink{
-	color: #A9842F;
-}
+			.reveal .contentslink{
+				color: #A9842F;
+			}
 		</style>
 	</head>
 	<body>
@@ -203,27 +216,26 @@ p span {
 
 				<section  data-background-image="images/back.png">
 				<h1>Contents</h1>
-				<div class="contentscontainer">
+				<div class="containertop">
 				<div class="col">
 					<ul>
 					<li class="contents"><h2><a href="/#/2" style="text-decoration: none; color: white;">1</a></h2><a href="/#/2" class="contentslink">Vision, Mission, Values</a></li>
-					<li class="contents"><h2><a href="/#/7" style="text-decoration: none; color: white;">4</a></h2><a href="/#/7" class="contentslink">Team Dynamic</a></li>
-					<li class="contents"><h2><a href="/#/12" style="text-decoration: none; color: white;">7</a></h2><a href="/#/12" class="contentslink">HR &amp; Professional Development</a></li>
+					<li class="contents"><h2><a href="/#/8" style="text-decoration: none; color: white;">4</a></h2><a href="/#/8" class="contentslink">How the VMV looks in daily life<br><br></a></li>
+					<li class="contents"><h2><a href="/#/15" style="text-decoration: none; color: white;">7</a></h2><a href="/#/15" class="contentslink">Belbin</a></li>
 					</ul>
 				</div>
 				<div class="col">
 					<ul>
-					<li class="contents"><h2><a href="/#/5" style="text-decoration: none; color: white;">2</a></h2><a href="/#/5" class="contentslink">Performance Measures</a></li>
-					<li class="contents"><h2><a href="/#/8" style="text-decoration: none; color: white;">5</a></h2><a href="/#/8" class="contentslink">Client Communications</a></li>
-					<li class="contents"><h2><a href="/#/14" style="text-decoration: none; color: white;">8</a></h2><a href="/#/14" class="contentslink">The Belbin Test</a></li>
-					<li class="contents"><h2><a href="/#/22" style="text-decoration: none; color: white;">10</a></h2><a href="/#/22" class="contentslink">Summary</a></li>
+					<li class="contents"><h2><a href="/#/6" style="text-decoration: none; color: white;">2</a></h2><a href="/#/6" class="contentslink">Performance Measures</a></li>
+					<li class="contents"><h2><a href="/#/12" style="text-decoration: none; color: white;">5</a></h2><a href="/#/12" class="contentslink">How we demonstrate our VMV in everyday life</a></li>
+					<li class="contents"><h2><a href="/#/16" style="text-decoration: none; color: white;">8</a></h2><a href="/#/16" class="contentslink">Marketing &amp; Social Media</a></li>
 					</ul>
 				</div>
 				<div class="col">
 					<ul>
-					<li class="contents"><h2><a href="/#/6" style="text-decoration: none; color: white;">3</a></h2><a href="/#/6" class="contentslink">The VMV Map</a></li>
-					<li class="contents"><h2><a href="/#/10" style="text-decoration: none; color: white;">6</a></h2><a href="/#/10" class="contentslink">Business Admin &amp; Process</a></li>
-					<li class="contents"><h2><a href="/#/15" style="text-decoration: none; color: white;">9</a></h2><a href="/#/15" class="contentslink">Marketing</a></li>
+					<li class="contents"><h2><a href="/#/7" style="text-decoration: none; color: white;">3</a></h2><a href="/#/7" class="contentslink">The VMV Map</a></li>
+					<li class="contents"><h2><a href="/#/13" style="text-decoration: none; color: white;">6</a></h2><a href="/#/13" class="contentslink">HR &amp; Professional Development</a></li>
+					<li class="contents"><h2><a href="/#/23" style="text-decoration: none; color: white;">9</a></h2><a href="/#/23" class="contentslink">Summary</a></li>
 					</ul>
 				</div>
 				</section>
@@ -247,57 +259,6 @@ p span {
 				<h2>Partnership</h2>
 				<p>We collaborate and thrive in working towards a shared goal</p>
 				</section>
-
-				<section  data-background-image="images/back.png">
-					<h1>Performance Measures</h1>
-					<p style="margin-bottom: 50px;">The Performance Measures are a way to quantify our success as a business and to gauge the success of our daily activities. They are split into three:</p>
-					<table>
-						<tr>
-							<td><h2 style="font-size: 30px;">PM1</h2></td>
-							<td><p>Retained Contracts</p></td>
-						</tr>
-						<tr>
-							<td><h2 style="font-size: 30px;">PM2</h2></td>
-							<td><p>Ad Hoc Work</p></td>
-						</tr>
-						<tr>
-							<td><h2 style="font-size: 30px;">PM3</h2></td>
-							<td><p>Under Usage</p></td>
-						</tr>
-					</table>
-					<p style="margin-top: 50px;"><span>For more on the performance measures, see the <a href="https://docs.google.com/document/d/1e309mNb3PK8u1KsOQa2vADk7AIQi_vFC/edit" target="_blank">Client Relationship Handbook</a>.</span></p>
-				</section>
-
-				<section  data-background-image="images/back.png">
-					<h1>The VMV Map</h1>
-					<img src="images/map.svg" height="500px">
-				</section>
-
-				<section  data-background-image="images/back.png">
-					<h1>How the VMV Weaves Itself Into Daily Tasks</h1>
-					<h2 style="margin-bottom: 70px;">Team Dynamic</h2>
-					<div class="r-stack">
-					<img src="images/lines.svg" width="90%">
-					<img src="images/ben.png" class="floating" width="200px;">
-					<img src="images/stafford.png" class="floating2" width="200px;">
-					<img src="images/conor.png" class="floating3" width="200px;">
-					<img src="images/hannah.png" class="floating4" width="200px;">
-					<img src="images/rob.png" class="floating5" width="200px;">
-				</section>
-
-			<section>
-				<h1>How the VMV Weaves Itself Into Daily Tasks</h1>
-				<h2>Client Communications</h2>
-				<ul>
-					<li>Email</li>
-					<li>Phone calls</li>
-					<li>Video calls</li>
-					<li>Face to face meetings</li>
-					<li>Social media interactions</li>
-				</ul>
-				<p>The VMV influences our relationships with clients. We must live and breathe our VMV in everything we do - this demonstrates our integrity and professionalism.</p>
-				<p style="margin-top: 40px;"><span>For an in depth look at client relationships read the <a href="https://docs.google.com/document/d/1KTIPW5wLbZKQWVRG_w_t3ATh4W_n2352lWY_4NSBmp8/edit" target="_blank">Client Relationship Handbook</a>.</span></p>
-			</section>
 
 			<section  data-background-image="images/back.png">
 			<div class="r-stack">
@@ -329,37 +290,90 @@ p span {
 				<div class="fragment current-visible">
 					<h2>Return On Investment</h2>
 					<ul>
-						<li>ROI underpins each of our Values to ensure we remain focussed on the needs of our clients'</li>
-						<li><hr>By monitoring ROI, we are transparent with our worth to their business</li>
+						<li>ROI underpins each of our Values to ensure we remain focussed on the needs of our clients</li>
+						<li><hr>By monitoring ROI, we are transparent with our value to their business</li>
 						<li><hr>We prove this ROI with our Reporting Suite; and we use this information to grow, adapt and evolve the email marketing programme</li>
 					</ul>
 				</div>
-				<div class="fragment current-visible">
-					<h2>Reporting</h2>
-					<ul>
-						<li>Our reporting suite demonstrates the performance of the email marketing programme and the value of Jarrang</li>
-						<li><hr>It can be used to improve the email programme, demonstrating our shared desire for success</li>
-						<li><hr>It is used a catalyst for further conversation, which helps to develop trust and rapport</li>
-						<li><hr>It clearly demonstrates our expertise and ensures email marketing remains high on the agenda for discussion and investment</li>
-					</ul>
-					<p style="margin-top: 40px;"><span>For more on reporting, you can find a list of articles on our wiki <a href="https://wiki.jarrang.com/reporting_suite_by_tier" target="_blank">here</a></span>.</p>
-				</div>
+			</section>
+
+				<section  data-background-image="images/back.png">
+					<h1>Performance Measures</h1>
+					<p style="margin-bottom: 50px;">The Performance Measures are a way to quantify our success as a business and to gauge the success of our daily activities. They are split into three:</p>
+					<table>
+						<tr>
+							<td><h2 style="font-size: 30px;">PM1</h2></td>
+							<td><p>Retained Contracts</p></td>
+						</tr>
+						<tr>
+							<td><h2 style="font-size: 30px;">PM2</h2></td>
+							<td><p>Ad Hoc Work</p></td>
+						</tr>
+						<tr>
+							<td><h2 style="font-size: 30px;">PM3</h2></td>
+							<td><p>Under Usage</p></td>
+						</tr>
+					</table>
+					<p style="margin-top: 50px;"><span>For more on the performance measures, see the <a href="https://docs.google.com/document/d/1e309mNb3PK8u1KsOQa2vADk7AIQi_vFC/edit" target="_blank">Client Relationship Handbook</a>.</span></p>
+				</section>
+
+				<section  data-background-image="images/back.png">
+					<h1>The Vision, Mission &amp; Values Map</h1>
+					<img src="images/map.svg" height="500px">
+				</section>
+
+				<section  data-background-image="images/back.png">
+					<h1>How the Vision, Mission and Values looks in daily life:</h1>
+					<h2 style="margin-bottom: 70px;">Team Dynamic</h2>
+					<div class="r-stack">
+					<img src="images/lines.svg" width="90%">
+					<img src="images/ben.png" class="floating" width="200px;">
+					<img src="images/stafford.png" class="floating2" width="200px;">
+					<img src="images/conor.png" class="floating3" width="200px;">
+					<img src="images/hannah.png" class="floating4" width="200px;">
+					<img src="images/rob.png" class="floating5" width="200px;">
+				</section>
+
+			<section>
+				<h1>How the Vision, Mission and Values looks in daily life:</h1>
+				<h2>Client Communications</h2>
+				<ul>
+					<li>Email</li>
+					<li>Phone Calls</li>
+					<li>Video Calls</li>
+					<li>Face to Face Meetings</li>
+					<li>Social Media Interactions</li>
+				</ul>
+				<p>The VMV influences our relationships with clients. We must live and breathe our VMV in everything we do - this demonstrates our integrity and professionalism.</p>
+				<p style="margin-top: 40px;"><span>For an in depth look at client relationships read the <a href="https://docs.google.com/document/d/1KTIPW5wLbZKQWVRG_w_t3ATh4W_n2352lWY_4NSBmp8/edit" target="_blank">Client Relationship Handbook</a>.</span></p>
+			</section>
+
+			<section>
+				<h1>How the Vision, Mission and Values looks in daily life:</h1>
+				<h2>Reporting</h2>
+				<ul>
+					<li>Our reporting suite demonstrates the performance of the email marketing programme and the value of Jarrang</li>
+					<li><hr>It can be used to improve the email programme, demonstrating our shared desire for success</li>
+					<li><hr>It is used a catalyst for further conversation, which helps to develop trust and rapport</li>
+					<li><hr>It clearly demonstrates our expertise and ensures email marketing remains high on the agenda for discussion and investment</li>
+				</ul>
+				<p style="margin-top: 40px;"><span>For more on reporting, you can find a list of articles on our wiki <a href="https://wiki.jarrang.com/reporting_suite_by_tier" target="_blank">here</a></span>.</p>
 			</section>
 
 			<section  data-background-image="images/back.png">
-				<h1>How the VMV Weaves Itself Into Daily Tasks</h1>
+				<h1>How the Vision, Mission and Values looks in daily life:</h1>
 				<h2>Business Administration &amp; Process</h2>
 				<div class="container">
 				<div class="col">
 					<ul>
-					<li>Business proposals</li>
+					<li>Business Proposals</li>
 					<li><hr>Contracts</li>
 					<li><hr>Agendas</li>
 					</ul>
 				</div>
 				<div class="col">
 					<ul>
-					<li>Internal documents</li>
+					<li>Internal Documents</li>
 					<li><hr>Handbooks &amp; Processes</li>
 					<li><hr>HR &amp; Professional Development</li>
 					</ul>
@@ -367,17 +381,17 @@ p span {
 			</section>
 
 			<section  data-background-image="images/back.png">
-					<h1>How do we display our VMV within the business administration?</h1>
+					<h1>How we demonstrate our Vision, Mission &amp; Values in everyday life</h1>
 					<ul>
-						<li>Clarify: If we’re transparent about how we work and how we can help people, this instills respect and trust.</li>
-						<li><hr>Quantify: Give clients and potential new business solid reasons that we’re exceptional. For example, years of expertise, statistics, hard facts.</li>
-						<li><hr>Collaborate: Make it known from the outset that we work in partnership with our clients. Our business is to understand theirs and to both have the same goal. We will listen, action, and advise.</li>
+						<li><strong>Clarify:</strong> If we’re transparent about how we work and how we can help people, this instills respect and trust.</li>
+						<li><hr><strong>Quantify:</strong> Give clients and potential new business solid reasons that we’re exceptional. For example, years of expertise, statistics, hard facts.</li>
+						<li><hr><strong>Collaborate:</strong> Make it known from the outset that we work in partnership with our clients. Our business is to understand theirs and to both have the same goal. We will listen, action, and advise.</li>
 					</ul>
 			</section>
 
 			<section data-background-image="images/back.png">
 				<h1>HR &amp; Professional Development</h1>
-				<p>We weave our VMV throughout our recruitment and personnel development processes to ensure that we live the brand. These processes included:</p>
+				<p>We weave our VMV throughout our recruitment and personnel development processes to ensure that we live the brand:</p>
 				<ul>
 					<li>We are the Email Marketing Specialists and we demonstrate this expertise through our daily work but also our thought leadership blog articles and ebooks</li>
 					<li><hr>By utilising the different skills of each member of the team, we demonstrate our confidence and experience</li>
@@ -392,7 +406,7 @@ p span {
 						<img src="images/dolls.svg" width="350px;">
 					</div>
 					<div class="col">
-						<p>We focus our energy on delivering individual objectives that fit together and contribute to team objectives, which in turn helps us to achieve our business goals this flows from the Appraisal process. These processes included:</p>
+						<p>We focus our energy on delivering individual objectives that fit together and contribute to team objectives, which in turn helps us to achieve our business goals this flows from the Appraisal process. These processes include:</p>
 						<ul>
 							<li>Clear Performance Measures for each role</li>
 							<li><hr>Regular 121 reviews</li>
@@ -405,10 +419,10 @@ p span {
 			</section>
 
 			<section  data-background-image="images/back.png">
-				<h1>The Belbin Test</h1>
+				<h1>Belbin</h1>
+				<h2>The High Performing Team</h2>
 					<section>
-						<h2>Employee examples of the different roles</h2>
-								<p>Belbin Team Roles have become the gold-standard method for identifying behavioural contributions in the workplace. It’s done through a series of questions that determine what you deem as high or low priorities in the workplace. We carry out the Belbin test for every new team member, if they wish to.</p>
+								<p>The Belbin Test has become the gold-standard method for identifying behavioural contributions in a team. It’s done through a series of questions that determine what you deem as high or low priorities. We carry out the Belbin test for every new colleague to ensure we maintain the optimum dynamic for a high performing team.</p>
 								<p>It’s important to have a balance of each key Belbin role in order to have a high performing team.</p>
 								<p style="margin-top: 40px;"><span>Scroll down to discover more about Belbin roles <img src="images/arrow.svg" width="20px" style="vertical-align:middle; padding: 10px;"></p>
 					</section>
@@ -483,39 +497,43 @@ p span {
 				</section>
 
 			<section  data-background-image="images/back.png">
-			<h1>How the VMV Weaves Itself Into Daily Tasks</h1>
+			<h1>How the Vision, Mission and Values looks in daily life:</h1>
 			<h2>Marketing</h2>
 				<ul>
 					<li>Raise awareness of the brand for potential clients, as well as reinforcing what we do amongst our existing clients and peers</li>
-					<li><hr>Share the team dynamic and culture at Jarrang - we live the VMV</li>
+					<li><hr>Share the team dynamic and culture at Jarrang - we live the Vision, Mission &amp; Values</li>
 					<li><hr>Shout about successes (e.g. case studies or awards)</li>
-					<li><hr>Part with knowledge and insights to support our mission of helping businesses send better email marketing</li>
+					<li><hr>Share knowledge and insights to support our mission of helping businesses send better email marketing</li>
 				</ul>
 			</section>
 
 			<section  data-background-image="images/back.png">
-				<h1>Social Media</h1>
-					<p>We use different platforms for different reasons. When it comes to Social Media:</p>
-					<div class="container">
+				<h2>Social Media</h2>
+					<p>We use different platforms to connect with different audiences at different times.<br>When it comes to Social Media:</p>
+					<div class="containertop">
 					<div class="col">
-						<h2>Instagram</h2>
+						<h3>Instagram</h3>
 						<ul>
-							<li>Brand representation</li>
-							<li>Softer side to Jarrang</li>
-							<li>People and culture</li>
+							<li>Brand Representation</li>
+							<li>Human Side to Jarrang</li>
+							<li>People and Culture</li>
 						</ul>
 					</div>
 					<div class="col">
-						<h2>LinkedIn</h2>
+						<h3>LinkedIn</h3>
 						<ul>
-							<li>Professional engagement</li>
-							<li>Thought leadership</li>
+							<li>Professional Engagement</li>
+							<li>Thought Leadership</li>
 						</ul>
 					</div>
 					<div class="col">
-						<h2>Facebook</h2>
+						<h3>Facebook</h3>
 						<ul>
-							<li>Combination</li>
+							<li>Brand Representation</li>
+							<li> Human Side to Jarrang</li>
+							<li>People and Culture</li>
+							<li>Professional Engagement</li>
+							<li>Thought Leadership</li>
 						</ul>
 					</div>
 				</section>
@@ -523,7 +541,7 @@ p span {
 				<section  data-background-image="images/back.png">
 					<div class="container">
 					<div class="col">
-						<h2>Team and culture</h2>
+						<h2>Team and Culture</h2>
 						<p>It displays the <strong>partnership</strong> of working together but also gives people an insight into being part of the Jarrang&nbsp;team.</p>
 					</div>
 					<div class="col">
@@ -535,8 +553,8 @@ p span {
 				<section data-background-image="images/back.png">
 					<div class="container">
 					<div class="col">
-						<h2>Raise brand awareness</h2>
-						<p>Our social media posts to raise awareness of our brand have a clear message and striking design that is aligned with our brand.</p>
+						<h2>Raise Brand Awareness</h2>
+						<p>Our social media posts to raise awareness of our brand have a clear message and striking design that is aligned with our values.</p>
 					</div>
 					<div class="col">
 						<img src="images/twitter1.png" width="45%" style="vertical-align:text-top;">
@@ -547,8 +565,8 @@ p span {
 				<section data-background-image="images/back.png">
 					<div class="container">
 					<div class="col">
-						<h2>Knowledge and insights</h2>
-						<p>By sharing our knowledge and skills it illustrates our genuine interest in wanting people to send better email marketing campaigns, which supports our Mission and demonstrates that we live by the VMV.</p>
+						<h2>Knowledge &amp; Insights</h2>
+						<p>By sharing our knowledge and skills it illustrates our genuine interest in wanting people to send better email marketing campaigns, which supports our Mission and demonstrates that we live by the Vision, Mission &amp; Values.</p>
 					</div>
 					<div class="col">
 						<img src="images/knowledge.png" width="100%" style="vertical-align:text-top;">
@@ -560,7 +578,7 @@ p span {
 				<div class="col">
 					<h2>Email Marketing</h2>
 					<p>How we present ourselves to the market is an extremely important opportunity to display our values. Whether it’s bringing new products to market by utilising the press or participating in events to increase visibility, people see us a trusted and reliable source.</p>
-					<p>Our monthly Jarrang Journal campaign is a consistent way to showcase our expertise. We practice what we preach and this transparency earns us respect and trust.</p>
+					<p>Our monthly Jarrang Journal, our regular email marketing newsletter, is a consistent way to showcase our expertise. We practice what we preach and this transparency earns us respect and trust.</p>
 				</div>
 				<div class="col">
 					<img src="images/jarrangjournal.png" style="margin-left: 70px;">
@@ -570,22 +588,21 @@ p span {
 			<section data-background-image="images/back.png">
 				<h1>Celebrating Success</h1>
 				<ul>
-					<li class="fragment"><strong>We should celebrate</strong> acquiring a new client, the happiness of an existing client, or completing a complex project - as long as it comes from a place of pride rather than arrogance.</li>
-					<li class="fragment"><hr>By doing so, it imparts a sense of <strong>trust and confidence in our abilities</strong></li>
+					<li><strong>We should celebrate</strong> acquiring a new client, the happiness of an existing client, or completing a complex project - as long as it comes from a place of pride rather than arrogance.</li>
+					<li><hr>By doing so, it imparts a sense of <strong>trust and confidence in our abilities</strong></li>
 			</section>
 
 			<section data-background-image="images/back.png">
 				<h1>Summary</h1>
-				<hr>
+				<p style="margin-bottom: 40px;">Our Vision, Mission and Values are at the core of everything we do at Jarrang:</p>
 				<ul>
-					<li>Our Vision, Mission and Values are at the core of everything we do at Jarrang</li>
-					<li><hr>It’s woven into our team dynamic so we can work together in an optimum way</li>
+					<li>It’s woven into our team dynamic so we can work together in an optimum way</li>
 					<li><hr>It’s carried through to how we interact with clients and how we run our business</li>
 					<li><hr>It influences how we project ourselves through our own marketing</li>
 					<li><hr>This gives the experience of working at, and with, Jarrang a sense of structure and confidence</li>
 					<li><hr>Knowing and understanding the businesses Core Values can only lead to success</li>
 				</ul>
-				<p style="margin-top: 50px;">&copy; 2020 Jarrang</p>
+				<p style="margin-top: 100px; font-size: 16px; float: right;">&copy; Jarrang Limited 2020</p>
 			</section>
 
 			</div>
